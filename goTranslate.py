@@ -5,7 +5,9 @@
 import sublime
 import sublime_plugin
 try:
-    from urllib import urlopen, urlencode, request
+    from urllib import urlopen
+    from urllib import urlencode
+    from urllib import request as Request
 except:
     from urllib.request import urlopen
     from urllib.parse import urlencode
